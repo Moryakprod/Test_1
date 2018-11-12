@@ -2,7 +2,7 @@ import requests
 
 KEY='ba89be5152a3f2584d8fc4de75381070'
 
-URL = 'http://api.openweathermap.org/data/2.5/weather?q=Kharkiv,UA&units=metric&appid=' + KEY
+URL = 'http://api.openweathermap.org/data/2.5/weather?q=Kharkiv,UA&lang=ru&units=metric&appid=' + KEY
 
 resp = requests.get(URL)
 data = resp.json()
@@ -20,3 +20,5 @@ print('Температура : {}'.format(Temp))
 print('Давление : {}'.format(Pressure))
 print('Влажность : {}'.format(Humid))
 print('Облака : {}'.format(Clouds))
+
+input('Press ENTER to exit')
