@@ -1,15 +1,5 @@
 import requests
 
-KEY = 'ba89be5152a3f2584d8fc4de75381070'
-
-URL = 'https://api.openweathermap.org/data/2.5/weather?q=London&appid=' + KEY
-
-resp = requests.get(URL)
-data = resp.json()
-
-data['name']
-data['weather'][0]['description']
-
 
 class Weather:
     def __init__(self, city, description, temp, pressure, humidity, all, speed):
